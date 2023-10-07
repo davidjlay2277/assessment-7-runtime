@@ -1,3 +1,6 @@
+/////////// Unit 7 Assessment - Step 2 ///////////////
+/////////// Problem 1 - Zero Sum //////////////////////
+
 const perf = require('execution-time')();
 let arrayTest = [];
 
@@ -8,14 +11,18 @@ function createArrayTest2(size){
     }
     return arrayTest
 }
-/////////// Unit 7 Assessment - Step 2, write functions ////////////
+
 const array1 = [];
 const array2 = [1, -1];
 const array3 = [1, 2, 3];
 const array4 = [-1, -2, 3, -3];
 const array5 = [10, 2, 3, 4, 5, -10];
 
-//////////// Options 1: loop over the array, takign the sum of different elements and returnign true if a zero value is ofund
+
+// 1) Sum Zero
+// Write a function that takes in an array of numbers. The function should return True if any two numberss in list sum to 0, and false otherwise.
+
+// Options 1
 const sumZeroOptOne = (arr) => {
   for (let i = 0; i < arr.length; i++) {
     for (let j = i + 1; j < arr.length; j++) {
@@ -27,7 +34,7 @@ const sumZeroOptOne = (arr) => {
   return false;
 };
 
-///////// Option 2: loop over the array and look for a negative number
+// Option 2
 const sumZeroOptTwo = (arr) => {
     for (let i = 0; i < arr.length; i++) {
       if (arr[i] < 0) {
@@ -45,8 +52,6 @@ console.log(array2, "expext TRUE.  Result:", sumZeroOptOne(array2));
 console.log(array3, "expext FASLE.  Result:", sumZeroOptOne(array3));
 console.log(array4, "expext TRUE.  Result:", sumZeroOptOne(array4));
 console.log(array5, "expext TRUE.  Result:", sumZeroOptOne(array5), "\n");
-
-
 
 ///////////TESTING function 1, options 2 //////////
 console.log("PROBLEM ONE - Zero Sum - OPTION 2 TEST");
@@ -70,7 +75,4 @@ let resultsTwo = perf.stop();
 console.log('Results for Problem 1, large array: Zero Sum');
 console.log("Optiopn 1", resultsOne.time);
 console.log("Option 2", resultsTwo.time);
-
-// 2) Unique Characters
-// Write a function that takes in a single word, as a string. It should return True if that word contains only unique characters. Return False otherwise.
 
