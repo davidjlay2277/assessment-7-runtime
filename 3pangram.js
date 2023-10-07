@@ -1,5 +1,5 @@
 /////////// Unit 7 Assessment - Step 2 ///////////////
-/////////// Problem 2 - Unique Characters //////////////////////
+/////////// Problem 3 - Unique Characters //////////////////////
 
 const perf = require("execution-time")();
 let arrayTest = [];
@@ -12,8 +12,10 @@ function createArrayTest2(size) {
   return arrayTest;
 }
 
-// 2) Unique Characters
-// Write a function that takes in a single word, as a string. It should return True if that word contains only unique characters. Return False otherwise.
+// 3) Pangram Sentence
+// Write a function to check a sentence to see if it is a pangram or not.
+
+
 const alphabetArray = [
   "a",
   "b",
