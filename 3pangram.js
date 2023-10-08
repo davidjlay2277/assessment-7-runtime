@@ -1,5 +1,6 @@
 /////////// Unit 7 Assessment - Step 2 ///////////////
-/////////// Problem 3 - Unique Characters //////////////////////
+/////////// Problem 3 - Panagram //////////////////////
+// Write a function to check a sentence to see if it is a pangram or not.
 
 const perf = require("execution-time")();
 let arrayTest = [];
@@ -11,10 +12,6 @@ function createArrayTest2(size) {
   }
   return arrayTest;
 }
-
-// 3) Pangram Sentence
-// Write a function to check a sentence to see if it is a pangram or not.
-
 
 const alphabetArray = [
   "a",
@@ -49,9 +46,8 @@ const str1 = "The quick brown FoX jumps over the lazy dog";
 const str2 = "I like cats, but not mice";
 const str3 = "ABcdefgHijklmnopQRStuvwxyzz";
 const str4 = "I was lazy, so this is not quite a pangram...even with x";
-const str5 = "When zombies arrive, quickly fax Judge Pat."
-const str6 = "Amazingly few discotheques provide jukeboxes."
-
+const str5 = "When zombies arrive, quickly fax Judge Pat.";
+const str6 = "Amazingly few discotheques provide jukeboxes.";
 
 const isPangram = (str) => {
   let strLowerCase = str.toLowerCase();

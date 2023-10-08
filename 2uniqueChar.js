@@ -1,7 +1,5 @@
 /////////// Unit 7 Assessment - Step 2 ///////////////
-/////////// Problem 3 - Unique Characters //////////////////////
-
-// 2) Unique Characters
+/////////// Problem 2 - Unique Characters //////////////////////
 // Write a function that takes in a single word, as a string. It should return True if that word contains only unique characters. Return False otherwise.
 
 const str1 = "abc";
@@ -19,22 +17,21 @@ const str7 = "";
 
 const fun1 = (string) => {
   let str = string.toLowerCase();
-  console.log(str)
+  console.log(str);
   for (i = 0; i < str.length; i++) {
-    for (j = i+1 ; j < str.length ; j++ )
-    if((str.substring(i, i+1)) === (str.substring(j, j+1) )) 
-  {
-      return "Not Unique"};
+    for (j = i + 1; j < str.length; j++)
+      if (str.substring(i, i + 1) === str.substring(j, j + 1)) {
+        return "Not Unique";
+      }
   }
-  return "Unique"
+  return "Unique";
 };
 
 ////Testing ////
-console.log(fun1(str1))
-console.log(fun1(str2))
-console.log(fun1(str3))
-console.log(fun1(str4))
-console.log(fun1(str5))
-console.log(fun1(str6))
-console.log(fun1(str7))
-
+console.log(fun1(str1));
+console.log(fun1(str2));
+console.log(fun1(str3));
+console.log(fun1(str4));
+console.log(fun1(str5));
+console.log(fun1(str6));
+console.log(fun1(str7));

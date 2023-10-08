@@ -1,7 +1,5 @@
 /////////// Unit 7 Assessment - Step 2 ///////////////
-/////////// Problem 4 - Unique Characters //////////////////////
-
-// 4) Longest Word
+/////////// Problem 4 - Longest Word //////////////////////
 // Write a function, find_longest_word, that takes a list of words and returns the length of the longest one.
 
 ///////////// psuedo code //////////////
